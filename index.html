@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkripsi dan Dekripsi Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enkripsi dan Dekripsi Sederhana</h1>
+        <textarea id="inputText" placeholder="Masukkan teks di sini..."></textarea>
+        <input type="text" id="salt" placeholder="Masukkan salt (kata kunci)" />
+        <select id="encryptionMethod">
+            <option value="method1">Metode 1: Penambahan ASCII</option>
+            <option value="method2">Metode 2: Penggantian Karakter</option>
+            <option value="method3">Metode 3: Pergeseran Karakter</option>
+        </select>
+        <button id="encryptButton">Enkripsi</button>
+        <button id="decryptButton">Dekripsi</button>
+        <h2>Hasil:</h2>
+        <textarea id="outputText" readonly></textarea>
+        <p class="explanation">
+            Masukkan teks yang ingin dienkripsi, dan kata kunci salt. 
+            Pilih metode enkripsi, lalu klik "Enkripsi" atau "Dekripsi".
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
